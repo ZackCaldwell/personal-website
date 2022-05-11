@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  align-items: center;
+  height: 80px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  margin: auto;
+  top: 0;
+  z-index: 10;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    transition: 800ms all ease;
+  }
+}
+
+.nav {
+  width: 100vw;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1400px;
+  align-items: stretch;
+}
+
+.nav-menu {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 1110px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+.logo {
+  color: rgb(236, 93, 110);
+  cursor: pointer;
+  justify-self: flex-start;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#mobile-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1110px) {
+  #mobile-icon {
+    color: rgb(236, 93, 110);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
+
+.nav-item {
+  padding: 0 16px;
+}
+
+.nav-link {
+  color: rgb(32, 32, 32);
+  height: 100%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 200ms ease;
+}
+
+.nav-link:hover {
+  color: rgb(236, 93, 110);
+}
+
+#hire {
+  align-self: center;
+  padding: 8px 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgb(236, 93, 110);
+  border: none;
+  transition: 300ms ease;
+}
+
+#hire:hover {
+  background-color: rgb(235, 131, 143);
+}
+
+@media screen and (max-width: 1110px) {
+  #hire {
+    display: none;
+  }
+}
